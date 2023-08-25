@@ -1,0 +1,166 @@
+/* ==========================
+   Global Styles
+   ========================== */
+
+/* Set body font and background */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Use 'Inter' font with a sans-serif fallback */
+    background-image: url('images/visax-SWgob2XGVxY-unsplash.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Default link styles */
+a {
+    color: #5f00d3;
+    transition: color 0.3s ease;
+    /* Smooth transition for color changes */
+}
+
+a:hover {
+    color: #4c008a;
+    /* Darker shade of purple */
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+/* Default blockquote styling */
+blockquote {
+    border-left: 2px solid #5f00d3;
+    /* Left border */
+}
+
+
+/* ==========================
+   Image Styles
+   ========================== */
+
+.styled-image {
+    width: 150px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+    /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(75, 0, 130, 0.3), 0 6px 20px rgba(75, 0, 130, 0.3);
+    /* Dark purplish shadow */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth transition for shadow effect */
+}
+
+.styled-image:hover {
+    box-shadow: 0 6px 8px rgba(255, 223, 38, 0.4), 0 8px 24px rgba(255, 223, 38, 0.4);
+    /* Yellowish shadow on hover */
+}
+
+
+/* ==========================
+   Typography Styles
+   ========================== */
+
+h1,
+h2,
+h3,
+b {
+    color: #5f00d3;
+}
+
+#CTA {
+    text-decoration: none;
+}
+
+#CTA:hover {
+    text-decoration: underline;
+    /* Add underline on hover for Call-to-action (CTA) */
+}
+
+.branding-color {
+    color: #5f00d3;
+}
+
+.custom-marker {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-marker li {
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.custom-marker li::before {
+    content: "-";
+    /* Simple bullet */
+    padding-right: 3px;
+    color: #5f00d3;
+    font-size: 1em;
+}
+
+
+/* ==========================
+   Component & Layout Styles
+   ========================== */
+
+.overlay-bg {
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Light border */
+    padding: 20px;
+    /* Padding around content */
+}
+
+/* Styles for Bootstrap's Card component */
+.card,
+.card-body {
+    background-color: transparent;
+    /* Transparent background for card and its body */
+}
+
+.card .list-group,
+.card .list-group-item {
+    background-color: transparent !important;
+    /* Transparent background for list groups in cards */
+    border: none;
+    /* Remove border around each list item */
+}
+
+/* Custom Button Styles */
+.custom-btn {
+    border: 2px solid #5f00d3;
+    background-color: transparent;
+    color: #5f00d3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transitions for background and color */
+}
+
+.custom-btn:hover {
+    background-color: #5f00d3;
+    /* Change background on hover */
+    border: 2px solid #5f00d3;
+    color: #e6dd2e;
+    /* Change text color on hover */
+}
+
+/* Other Miscellaneous Styles */
+.custom-border {
+    border-radius: 10px;
+    border: 2px solid #5f00d3;
+}
+
+/* ==========================
+   Media Queries for Responsiveness
+   ========================== */
+
+@media (max-width: 768px) {
+    .overlay-bg {
+        border-radius: 0;
+        /* Reset rounded corners for mobile */
+        padding: 10px;
+        /* Adjust padding for mobile */
+        width: 95%;
+    }
+}

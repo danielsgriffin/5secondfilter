@@ -6,10 +6,10 @@
 body {
     font-family: 'Inter', sans-serif;
     /* Use 'Inter' font with a sans-serif fallback */
-    background-image: url('images/visax-SWgob2XGVxY-unsplash.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/*    background-image: url('images/visax-SWgob2XGVxY-unsplash.webp'), url('images/visax-SWgob2XGVxY-unsplash.jpeg');*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
 }
 
 /* Default link styles */
@@ -159,7 +159,7 @@ b {
     .overlay-bg {
         border-radius: 0;
         /* Reset rounded corners for mobile */
-        padding: 10px;
+        padding: 5px;
         /* Adjust padding for mobile */
         width: 95%;
     }
